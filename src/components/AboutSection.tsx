@@ -27,10 +27,10 @@ const AboutSection = () => {
         <div className={`text-center mb-16 transition-all duration-700 ${visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           <p className="text-primary text-sm tracking-[0.3em] uppercase mb-3">Who We Are</p>
           <h2 className="text-3xl md:text-5xl font-bold text-foreground text-glow-sm mb-6">
-            About <span className="text-primary">ADN Marketer</span>
+            About <span className="text-primary">Suri Agency</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto leading-relaxed">
-            ADN Marketer Agency is a cutting-edge digital agency specializing in 
+            Suri Agency is a cutting-edge digital agency specializing in 
             <strong className="text-foreground"> website selling</strong> and 
             <strong className="text-foreground"> agent-based sales solutions</strong>. 
             We connect businesses with premium digital assets and skilled sales agents 
