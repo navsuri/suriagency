@@ -1,4 +1,5 @@
-import HeroSphere from './HeroSphere';
+import { lazy, Suspense } from 'react';
+const HeroSphere = lazy(() => import('./HeroSphere'));
 
 const HeroSection = () => {
   return (
@@ -58,7 +59,9 @@ const HeroSection = () => {
 
       {/* 3D Sphere */}
       <div className="relative z-10 w-full max-w-2xl mx-auto -mt-4">
-        <HeroSphere />
+        <Suspense fallback={<div className="w-full h-[500px] md:h-[600px]" />}>
+          <HeroSphere />
+        </Suspense>
       </div>
 
       {/* Scroll indicator */}
