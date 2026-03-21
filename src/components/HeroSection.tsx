@@ -1,4 +1,5 @@
-import HeroSphere from './HeroSphere';
+import { lazy, Suspense } from 'react';
+const HeroSphere = lazy(() => import('./HeroSphere'));
 
 const HeroSection = () => {
   return (
