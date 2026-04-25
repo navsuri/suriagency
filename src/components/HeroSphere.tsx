@@ -18,9 +18,9 @@ function StripedSphere() {
     <mesh ref={meshRef}>
       <sphereGeometry args={[2.2, 128, 128]} />
       <MeshDistortMaterial
-        color="#00d4ff"
-        emissive="#0066aa"
-        emissiveIntensity={0.3}
+        color="#22e07a"
+        emissive="#0a8a3f"
+        emissiveIntensity={0.4}
         metalness={0.9}
         roughness={0.15}
         wireframe={false}
@@ -50,11 +50,11 @@ function GlowRings() {
     <>
       <mesh ref={ring1} rotation={[0.5, 0, 0]}>
         <torusGeometry args={[3, 0.02, 16, 100]} />
-        <meshStandardMaterial color="#00d4ff" emissive="#00d4ff" emissiveIntensity={2} transparent opacity={0.6} />
+        <meshStandardMaterial color="#22e07a" emissive="#22e07a" emissiveIntensity={2} transparent opacity={0.6} />
       </mesh>
       <mesh ref={ring2} rotation={[1.2, 0.5, 0]}>
         <torusGeometry args={[3.3, 0.015, 16, 100]} />
-        <meshStandardMaterial color="#7c3aed" emissive="#7c3aed" emissiveIntensity={2} transparent opacity={0.4} />
+        <meshStandardMaterial color="#0a8a3f" emissive="#0a8a3f" emissiveIntensity={2} transparent opacity={0.4} />
       </mesh>
     </>
   );
@@ -83,7 +83,7 @@ function Particles() {
           args={[positions, 3]}
         />
       </bufferGeometry>
-      <pointsMaterial color="#00d4ff" size={0.03} transparent opacity={0.6} sizeAttenuation />
+      <pointsMaterial color="#22e07a" size={0.03} transparent opacity={0.6} sizeAttenuation />
     </points>
   );
 }
@@ -94,8 +94,8 @@ const HeroSphere = () => {
       <Canvas camera={{ position: [0, 0, 7], fov: 50 }}>
         <Suspense fallback={null}>
           <ambientLight intensity={0.2} />
-          <pointLight position={[5, 5, 5]} intensity={1} color="#00d4ff" />
-          <pointLight position={[-5, -3, 3]} intensity={0.5} color="#7c3aed" />
+          <pointLight position={[5, 5, 5]} intensity={1} color="#22e07a" />
+          <pointLight position={[-5, -3, 3]} intensity={0.5} color="#0a8a3f" />
           <spotLight position={[0, 5, 0]} intensity={0.8} color="#ffffff" angle={0.3} penumbra={0.5} />
           <StripedSphere />
           <GlowRings />
