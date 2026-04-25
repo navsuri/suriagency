@@ -107,6 +107,24 @@
     mask-composite: exclude;
     pointer-events: none;
   }
+
+  .green-glow {
+    background:
+      radial-gradient(ellipse 80% 60% at 50% 100%, hsl(var(--primary) / 0.55), transparent 70%),
+      radial-gradient(ellipse 60% 40% at 50% 90%, hsl(var(--primary) / 0.35), transparent 70%);
+  }
+
+  .green-bars {
+    background-image: repeating-linear-gradient(
+      90deg,
+      transparent 0px,
+      transparent 38px,
+      hsl(var(--background) / 0.6) 38px,
+      hsl(var(--background) / 0.6) 40px
+    );
+    -webkit-mask-image: linear-gradient(to top, black 30%, transparent 100%);
+    mask-image: linear-gradient(to top, black 30%, transparent 100%);
+  }
 }
 
 /* Floating particles animation */
