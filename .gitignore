@@ -22,3 +22,10 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Project-specific overrides
+backend/dist/
+backend/data/*.db
+node_modules/
+frontend/dist/
+
